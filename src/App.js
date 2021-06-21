@@ -8,15 +8,12 @@ import HomeComponent from './components/Home/HomeComponent';
 function App() {
   return (
     <div className="App">
-      
       <BrowserRouter>
-        <NavigationComponent />
         <Switch>
             <Route path="/" component={HomeComponent} exact />
             <Route path="/projects" component={ProjectsComponent} />
         </Switch>
       </BrowserRouter>
-      
     </div>
   );
 }
