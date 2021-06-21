@@ -6,8 +6,11 @@ export default class HomeComponent extends React.Component {
   render()
   { 
     return <div className="projects-div">
-            <NavigationComponent current="home"/>
-            Home
+            <NavigationComponent current="home">
+                <div className="slideInFromLeft">
+                    Home Tab
+                </div>
+            </NavigationComponent>
         </div>;
   }
 }
