@@ -7,7 +7,7 @@ export default class HomeComponent extends React.Component {
   { 
     return <div className="projects-div">
             <NavigationComponent current="home">
-                <div className="slideInFromLeft">
+                <div className="slideInFromRight">
                     Home Tab
                 </div>
             </NavigationComponent>

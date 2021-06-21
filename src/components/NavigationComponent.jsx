@@ -8,14 +8,12 @@ export default class NavigationComponent extends React.Component {
   render() { 
     const isSelected = (target) => target === this.props.current;
     const styleBuilder = (target) => navlinkStyleBuilder(isSelected(target)); 
-    const getLink = (page) => 
-    <span style={navlinkContainerStyle}>
-      <Link to={page.path} style={styleBuilder(page.name)}>
-        {page.display}
-      </Link>
-    </span>
-
-    const links = pages.map(getLink);
+    const links = pages.map((page, i) => 
+      <span style={navlinkContainerStyle} key={i}>
+        <Link to={page.path} style={styleBuilder(page.name)}>
+          {page.display}
+        </Link>
+    </span>);
 
     return <>
         <div style={navbarStyle}>
