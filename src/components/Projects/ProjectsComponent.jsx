@@ -7,10 +7,11 @@ import ProjectCard from "./ProjectCard";
 const projectsList = [
   {
     name: "NXO",
-    for: "",
-    description: "",
+    for: "Personal",
+    description: "Multiplayer game for multidimensional tic-tac-toe (also known as the 'nd'-game) using ",
     image: "",
-    technologies: ["sql", "css", "html"]
+    technologies: ["C#","ASP.Net Core","Blazor Webassembly","CSS", "HTML", "Azure App Service", "Websockets", "SignalR"],
+    term: ""
   }
 ];
 
@@ -19,7 +20,6 @@ export default class ProjectsComponent extends React.Component {
   render()
   { 
     const projects = projectsList.map((project,i) => {
-      console.log(project, i);
       return <ProjectCard project={project} key={i}/>
     });
     console.log(projectsList)
