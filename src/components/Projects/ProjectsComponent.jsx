@@ -12,6 +12,14 @@ const projectsList = [
     image: "",
     technologies: ["C#","ASP.Net Core","Blazor Webassembly","CSS", "HTML", "Azure App Service", "Websockets", "SignalR"],
     term: ""
+  },
+  {
+    name: "Dark Matter Imaging",
+    for: "CSCI1951A Final Project/Research",
+    description: "",
+    image: "",
+    technologies: [],
+    term: ""
   }
 ];
 

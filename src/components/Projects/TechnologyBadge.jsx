@@ -3,6 +3,7 @@ import React from 'react'
 const technologyColors = {
     sql: "yellow",
     css: "orange",
+    "blazor webassembly": "blue"
 };
 
 const style = {
