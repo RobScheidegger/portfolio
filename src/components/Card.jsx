@@ -1,5 +1,5 @@
 import React from 'react'
-import { themeLightColor, themeLightText } from '../globalStyles'
+// import { themeLightColor, themeLightText } from '../globalStyles'
 
 const cardStyle = {
     margin: 10,
