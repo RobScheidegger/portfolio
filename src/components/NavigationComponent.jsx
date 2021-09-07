@@ -1,52 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { navbarStyle, navlinkContainerStyle, navlinkStyleBuilder, sidebarStyle, cornerButtonStyle } from "./NavigationStyles";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 export default class NavigationComponent extends React.Component {
   render() { 
-    const isSelected = (target) => target === this.props.current;
-    const styleBuilder = (target) => navlinkStyleBuilder(isSelected(target)); 
-    const links = pages.map((page, i) => 
-      <span style={navlinkContainerStyle} key={i}>
-        <Link to={page.path} style={styleBuilder(page.name)}>
-          {page.display}
-        </Link>
-    </span>);
-
     return <>
-        <div style={navbarStyle}>
-            <span style={cornerButtonStyle}>
-              <FontAwesomeIcon icon={faCode} size="3x" style={{margin: "auto", verticalAlign: "center"}}/>
-            </span>
-            {links}
-        </div>
-        <div style={{display: "flex"}}>
-          <div style={sidebarStyle}></div>
-          <div style={{flex: 1}}>
-            {this.props.children}
-          </div>
-        </div>
-        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Robert F. Scheidegger</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="" /></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
       </>
   }
 }
-
-export const pages = [
-  {
-    display: "Home",
-    name: "home",
-    path: "/"
-  },
-  {
-    display: "Education",
-    name: "education",
-    path: "/education"
-  },
-  {
-    display: "Projects",
-    name: "projects",
-    path: "/projects"
-  }
-]

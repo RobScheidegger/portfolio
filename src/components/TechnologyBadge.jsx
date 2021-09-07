@@ -3,7 +3,8 @@ import React from 'react'
 const technologyColors = {
     sql: "yellow",
     css: "orange",
-    "blazor webassembly": "blue"
+    "blazor webassembly": "blue",
+    "c#": "blue"
 };
 
 const style = {
@@ -17,7 +18,7 @@ export default class TechnologyBadge extends React.Component{
     render(){
         const color = technologyColors[this.props.name.toLowerCase()]
         let customStyle = {...style, color: color}
-        return <span style={customStyle}>
+        return <span style={customStyle} class="shadow font-weight-bold"> 
             {this.props.name}
         </span>
     }
