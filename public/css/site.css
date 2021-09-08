@@ -1,0 +1,10 @@
+.technologies-list{
+    line-height: 40px;
+    word-break: keep-all;
+}
+
+.technology-badge{
+    word-break: keep-all;
+    line-break: strict;
+    white-space:nowrap;
+}
