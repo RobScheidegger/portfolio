@@ -12,7 +12,8 @@ const projectsList = [
     {
         name: "Personal Web Site (This)",
         description: "A place for me to give a breif overview of who I am and what I have done and will do. "
-            + "Published for free on Ezure as a React static web app, using GitHub actions to automate deployment on commit.",
+            + "Published for free on Azure as a React static web app, using GitHub actions to automate deployment on commit.",
+        github: "https://github.com/RobScheidegger/robscheidegger.github.io",
         technologies: ["React", "HTML", "CSS", "JavaScript"]
     },
     {

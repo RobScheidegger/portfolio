@@ -15,7 +15,7 @@ const experienceList = [
         position: "Software Engineer",
         description: "Returned for the summer in order to develop a complete management system for the corporation, including barcode-based inventory management program, "
             + "additional functions to automate integration of other cloud based services, and migration of previous programs from WPF to ASP.NET Core MVC.",
-        timeframe: "April 2020 - August 2020\nMay 2021 - June 2021",
+        timeframe: "April 2020 - June 2021 (Non-Continuous)",
         technologies: ["C#", "Asp.Net Core", "Azure", "Azure DevOps", "CI/CD", "Unit Testing", "Moq", "MSSQL"]
     },
     {
