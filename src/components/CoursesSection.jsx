@@ -42,7 +42,7 @@ const courseList = [
         number: "CSCI 1951A",
         semester: "Summer 2021",
         category: "past",
-        technologies: ["Python", "Tensoflow", "MapReduce", "PySpark"]
+        technologies: ["Python", "Tensorflow", "MapReduce", "PySpark"]
     },
     {
         name: "Blockchains and Cryptocurrencies",

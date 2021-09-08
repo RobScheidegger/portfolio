@@ -21,7 +21,7 @@ const projectsList = [
         description: "Multiplayer real-time web game of multidimensional tic-tac-toe (also known as the nd-game). "
                 + "Users can join friends in a lobby-based authentication scheme, and create games with various board-sizes and numbers of dimensions (4x4x4x4 is a personal favorite).",
         github: "https://github.com/RobScheidegger/nxo",
-        technologies: ["Blazor", "C#", "Asp.Net Core", "Websockets", "SignalR"]
+        technologies: ["Blazor", "C#", "Asp.Net Core", "WebSockets", "SignalR"]
     },
     {
         name: "pyret-blocks",

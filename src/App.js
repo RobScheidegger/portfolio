@@ -12,9 +12,9 @@ function App() {
       <div class="container-fluid p-0">
         
         <PersonalSection />
-        <EducationSection />
         <ExperienceSection />
         <ProjectsSection />
+        <EducationSection />
         <CoursesSection />
       </div>
     </>
