@@ -7,7 +7,8 @@ const projectsList = [
         description: "As the final project for Data Science (CSCI1951A), our team decided to build a RNN classifier to determine whether they were examples of strong gravitational lensing or not. "
                 + "We build this model based on a recent paper in the subject (Huang 20, Huang 21), and run using a combination of local data provided by the physics department and API cutouts from previous surveys. "
                 + "The model was then trained and tested using the Oscar supercomputer.",
-        technologies: ["Python", "Tensorflow", "MapReduce", "PySpark", "Bash"]
+        technologies: ["Python", "Tensorflow", "MapReduce", "PySpark", "Bash"],
+        github: "https://github.com/lzawbrito/red-galaxies"
     },
     {
         name: "Personal Web Site (This)",
