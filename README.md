@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Blogster
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Theme: **sleek**
 
-## Available Scripts
+Blogster is a collection of beautiful, accessible and performant blog templates built with [Astro](https://astro.build) and [Markdoc](https://markdoc.dev).
 
-In the project directory, you can run:
+Check out the demo here - [Blogster sleek template](https://blogster-sleek.netlify.app).
 
-### `npm start`
+## Sleek Template
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+A beautiful, performant and accessible theme built with [Tailwind](https://tailwindcss.com).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Fast**. Fast by default. Astro websites are engineered to be fast and load before you could blink, even when not cached.
+- **Dark mode**. All themes have light/dark mode built-in.
+- **Mobile first**. Responsive and loads fast in all devices.
+- **Accessible**. A well thought out semantic and accessible content.
+- **Perfect lighthouse score.** 100 across the board.
+- **Easy content authoring**. Author content using markdown (`.md`) from your code editor or directly in GitHub.
+- **Extended markdown with [Markdoc](https://markdoc.dev).** Type-safe custom components like YouTube embed, Twitter embed (or anything you want really) in your markdown (`.md`) files.
+- **RSS feed**. Your blog has an RSS feed setup that can be accessed at `/rss.xml`.
+- **SEO**. All pages are setup with all the SEO you might need.
 
-### `npm test`
+## How do I add content?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All the content is written in markdown (.md) and grouped as `blog` or `projects` in the `content` directory. All the default markdown syntax will work. You also have a few example custom markdown elements like _YouTube embed_, _Twitter embed_, etc. You can create your own custom components too in two easy steps.
 
-### `npm run build`
+1. Add a markdoc config. Check out the markdoc config in [src/lib/markdoc/config.ts](src/lib/markdoc/config.ts) to learn how to add custom components.
+2. Add a component to render your custom component. Check out the Renderer in [src/components/Renderer.astro](src/components/Renderer.astro).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## How do I make it my blog?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Easy.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- All content is static and everything is straight forward. Change whatever you need to change.
+- Delete or update the content in `content/{content-group}`. `content-group` could be `blog`, `projects` or `anything`.
+- (Optional) If you need more content types like _Notes_, just create a new dir in `content` and add a new frontmatter validator like [src/lib/markdoc/blog/frontmatter](src/lib/markdoc/blog/frontmatter).
 
-### `npm run eject`
+## How do I deploy?
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`yarn build` will generate a static website in `dist` dir. You can host it with any static hosting. If you need a recommendation, check out [Netlify](netlify.com).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Credit
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Thanks to other templates that inspired this theme.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- [Official Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog)
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT © [Dinesh Pandiyan](https://github.com/flexdinesh)
