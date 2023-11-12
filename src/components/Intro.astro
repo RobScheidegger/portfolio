@@ -1,18 +1,23 @@
+
 ---
+import { TypedHeader, TypedSubHeader } from './custom/TypedHeader.jsx';
 ---
+
 
 <section class="mb-8">
   <div class="mb-4">
     <h1
-      class="font-extrabold text-5xl md:text-6xl tracking-tight pt-4 pb-2 overflow-hidden"
+      class="font-extrabold text-5xl md:text-6xl tracking-tight pt-4 overflow-hidden h-[90px]"
     >
       <span
         class="bg-gradient-to-br from-[#fb923c] via-[#f97316] to-[#ea580c] dark:from-primary-main dark:via-primary-main dark:to-primary-main bg-clip-text text-transparent"
       >
-        Robert Scheidegger
+        <TypedHeader client:load/>
       </span>
     </h1>
-    <p class="text-2xl pb-4">Web Developer. OSS Wizard. Blogger.</p>
+    <p class="text-2xl pb-4">
+      <TypedSubHeader client:load/>
+    </p>
   </div>
   <div>
     <p class="mb-5">
