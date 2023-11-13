@@ -1,5 +1,5 @@
 ---
-title: Weenix - OS Kernel Implementation in C
+title: Weenix - OS Kernel in C
 description: Course project for Brown's CSCI2670 (Operating Systems w/ Lab)
 date: 2023-11-13
 external: false
