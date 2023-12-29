@@ -1,0 +1,20 @@
+@startuml Adktech-Dags-Hierarchy
+
+object Client {
+
+}
+
+object Order {
+    ClientId
+}
+
+object OrderDetail {
+    AssociateClientId
+    OrderId
+}
+
+Client o-> Order
+Client o-> OrderDetail
+Order o-r-> OrderDetail
+
+@enduml
