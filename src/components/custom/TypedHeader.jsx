@@ -21,15 +21,15 @@ export const TypedSubHeader = () => {
   return (
     <TypeAnimation
       sequence={[
+        "Embedded Software Engineer",
+        TIME_DELAY,
         "Performance and Optimization Enthusiast.",
         TIME_DELAY,
-        "Deep Learning Engineer.",
+        "Deep Learning Devotee.",
         TIME_DELAY,
         "Big Data Wrangler.",
         TIME_DELAY,
-        "Fullstack Software Engineer.",
-        TIME_DELAY,
-        "Computer Systems Geek.",
+        "Robotics Geek.",
         TIME_DELAY,
       ]}
       speed={20}
