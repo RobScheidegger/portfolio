@@ -29,8 +29,8 @@ Our solver ended up being both _fast_ and _tiny_ relative to others. We employ t
 
 Yet, I am very happy with our implementation, since I feel that our solution is _understandable_ while still being highly performant, something that is often hard to find. For instance, the main DPLL loop is as follows, which clearly illustrates how our algorithm works, and in particular, the concepts of:
 
-1. <b>Inference</b> - 
-2. <b>(Informed) Search</b> - (Semi-) Randomly searching new values after no additional inference is possible. This generally involves _branching_ on a randomly chosen variable and exploring the subtree defined by it.
+1. __Inference__ - Using logical deduction to remove clauses/variables that we know we can assign to a given variable.
+2. __(Informed) Search__ - (Semi-) Randomly searching new values after no additional inference is possible. This generally involves _branching_ on a randomly chosen variable and exploring the subtree defined by it.
 
 The main `microsat` DPLL loop is given below:
 
